@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0B0F10">
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Jost Burger. Hambúrguer artesanal em Brusque, Santa Catarina. Conheça nossos burgers, descubra a casa e encontre seu próximo favorito.">
+    <!-- Remover noindex quando os dados oficiais estiverem confirmados e o site for publicado. -->
+    <meta name="robots" content="noindex, nofollow">
+    <title>Jost Burger | Hambúrguer artesanal em Brusque</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo/simbolo.svg">
+    <!-- Fontes opcionais. As fontes de sistema mantêm a página utilizável sem conexão. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!--
+      GUIA DE PERSONALIZAÇÃO
+      1. Marca provisória: substituir assets/logo/simbolo.svg e/ou o bloco .brand.
+      2. Fotos: substituir os SVGs indicados em cada seção; remover as legendas de placeholder.
+      3. Pedidos: buscar e substituir TODAS as ocorrências de https://anota.ai/ pelo link da loja.
+         O endereço atual abre o site institucional da plataforma; ainda não recebe pedidos.
+      4. Confirmar produtos, preços, endereço, horários, telefone e perfil do Instagram.
+      5. Esta é uma proposta visual. Os dados ilustrativos estão identificados na página.
+    -->
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" id="topo">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="Jost Burger — início">
+          <img class="brand-symbol" src="assets/logo/simbolo.svg" alt="" width="46" height="46">
+          <span class="brand-name">JOST<span>BURGER</span></span>
+        </a>
+
+        <nav class="site-nav" id="menu-principal" aria-label="Menu principal">
+          <a href="#inicio">Início</a>
+          <a href="#cardapio">Cardápio</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#localizacao">Localização</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="button button-primary button-small order-link" href="https://pedido.anota.ai/loja/jost-burger" target="_blank" rel="noopener noreferrer" aria-label="Pedir agora — Anota AI, nova aba">
+            Pedir agora
+            <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg>
+          </a>
+          <button class="menu-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu" hidden>
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+      <section class="hero section" id="inicio" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="small-line"></span> BRUSQUE, SC · HAMBURGUERIA ARTESANAL</p>
+            <h1 id="hero-title">JOST<br>BURGER<span class="accent">.</span></h1>
+            <p class="hero-subtitle">Hambúrguer artesanal.<br>Sabor de verdade.</p>
+            <p class="hero-description">Pão macio, carne no ponto e aquele sabor que fica na memória. Feito com cuidado, do primeiro ingrediente à última mordida.</p>
+            <div class="hero-actions">
+              <a class="button button-primary order-link" href="https://anota.ai/" target="_blank" rel="noopener noreferrer">
+                Pedir agora
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg>
+              </a>
+              <a class="button button-secondary" href="#cardapio">
+                Ver cardápio
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-down"></use></svg>
+              </a>
+            </div>
+            <ul class="hero-benefits" aria-label="Nosso jeito de fazer">
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#leaf"></use></svg>Ingredientes selecionados</li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#flame"></use></svg>Sabor marcante</li>
+              <li><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#heart"></use></svg>Feito com paixão</li>
+            </ul>
+          </div>
+
+          <!-- FOTO PRINCIPAL: trocar o src pela foto do burger em assets/burgers/.
+               Ajustar alt e remover .placeholder-caption e .hero-watermark após a troca. -->
+          <figure class="hero-visual">
+            <span class="visual-eyebrow">O SEU PRÓXIMO FAVORITO.</span>
+            <span class="hero-watermark" aria-hidden="true">JOST</span>
+            <div class="artisan-seal" aria-label="Feito com paixão">
+              <span>FEITO COM</span>
+              <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#spark"></use></svg>
+              <span>PAIXÃO</span>
+            </div>
+            <img class="hero-burger" src="assets/burgers/burger-placeholder.svg" width="600" height="450" alt="Ilustração provisória de um hambúrguer artesanal; espaço reservado para a foto principal" fetchpriority="high">
+            <figcaption class="placeholder-caption">
+              <span class="placeholder-caption-text"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#image"></use></svg><span>Foto principal do burger<small>ESPAÇO RESERVADO PARA IMAGEM</small></span></span>
+              <span class="visual-index" aria-hidden="true">01 /</span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="container hero-bottom" aria-hidden="true">
+          <span><svg class="icon"><use href="assets/icons/sprite.svg#arrow-down"></use></svg> BONS ENCONTROS COMEÇAM COM UM BOM BURGER.</span>
+          <span>FEITO EM BRUSQUE, SC</span>
+        </div>
+      </section>
+
+      <div class="brand-strip" aria-hidden="true">
+        <div class="container brand-strip-inner">
+          <span>FEITO NA CHAPA.</span><svg class="icon"><use href="assets/icons/sprite.svg#spark"></use></svg>
+          <span>PENSADO NO DETALHE.</span><svg class="icon"><use href="assets/icons/sprite.svg#spark"></use></svg>
+          <span>SABOR DE VERDADE.</span>
+        </div>
+      </div>
+
+      <section class="menu-section section" id="cardapio" aria-labelledby="menu-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span class="section-number">01 /</span> OS FAVORITOS DA CASA</p>
+              <h2 id="menu-title">BURGERS QUE<br>FAZEM SUCESSO<span class="accent">.</span></h2>
+            </div>
+            <div class="section-intro">
+              <p>Do clássico que nunca falha à combinação que surpreende. Encontre o seu favorito.</p>
+              <a class="text-link order-link" href="https://anota.ai/" target="_blank" rel="noopener noreferrer">Ver cardápio completo <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg></a>
+            </div>
+          </div>
+
+          <!-- CARDÁPIO ILUSTRATIVO: confirmar ingredientes, produtos e preços com a hamburgueria. -->
+          <div class="product-grid">
+            <article class="product-card">
+              <!-- FOTO: trocar src por assets/burgers/jost-classico.webp e atualizar alt. -->
+              <div class="product-image product-image-classic">
+                <span class="product-tag">O ESSENCIAL</span>
+                <span class="product-number" aria-hidden="true">01</span>
+                <img src="assets/burgers/burger-placeholder.svg" width="600" height="450" alt="Espaço reservado para foto do Jost Clássico" loading="lazy" decoding="async">
+                <span class="image-label"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#image"></use></svg> FOTO DO BURGER</span>
+              </div>
+              <div class="product-info">
+                <h3>Jost Clássico</h3>
+                <p>Pão brioche, burger artesanal, queijo derretido, alface, tomate e molho da casa.</p>
+                <div class="product-bottom">
+                  <p class="product-price"><span>R$</span> 29,90</p>
+                  <a class="product-order order-link" href="https://anota.ai/" target="_blank" rel="noopener noreferrer" aria-label="Pedir Jost Clássico pelo Anota AI, nova aba"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <!-- FOTO: trocar src por assets/burgers/jost-bacon.webp e atualizar alt. -->
+              <div class="product-image product-image-bacon">
+                <span class="product-tag">PARA QUEM AMA BACON</span>
+                <span class="product-number" aria-hidden="true">02</span>
+                <img src="assets/burgers/burger-placeholder.svg" width="600" height="450" alt="Espaço reservado para foto do Jost Bacon" loading="lazy" decoding="async">
+                <span class="image-label"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#image"></use></svg> FOTO DO BURGER</span>
+              </div>
+              <div class="product-info">
+                <h3>Jost Bacon</h3>
+                <p>Burger artesanal, cheddar cremoso, bacon crocante e maionese da casa no pão brioche.</p>
+                <div class="product-bottom">
+                  <p class="product-price"><span>R$</span> 34,90</p>
+                  <a class="product-order order-link" href="https://anota.ai/" target="_blank" rel="noopener noreferrer" aria-label="Pedir Jost Bacon pelo Anota AI, nova aba"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <!-- FOTO: trocar src por assets/burgers/jost-especial.webp e atualizar alt. -->
+              <div class="product-image product-image-special">
+                <span class="product-tag">ASSINATURA DA CASA</span>
+                <span class="product-number" aria-hidden="true">03</span>
+                <img src="assets/burgers/burger-placeholder.svg" width="600" height="450" alt="Espaço reservado para foto do Jost Especial" loading="lazy" decoding="async">
+                <span class="image-label"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#image"></use></svg> FOTO DO BURGER</span>
+              </div>
+              <div class="product-info">
+                <h3>Jost Especial</h3>
+                <p>Burger artesanal, queijo, cebola caramelizada, bacon e um toque especial de barbecue.</p>
+                <div class="product-bottom">
+                  <p class="product-price"><span>R$</span> 39,90</p>
+                  <a class="product-order order-link" href="https://anota.ai/" target="_blank" rel="noopener noreferrer" aria-label="Pedir Jost Especial pelo Anota AI, nova aba"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg></a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <p class="content-note">Seleção ilustrativa. Produtos, ingredientes e valores serão confirmados pela Jost Burger.</p>
+        </div>
+      </section>
+
+      <section class="about-section section" id="sobre" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <!-- AMBIENTE: trocar o SVG pela foto em assets/ambiente/ e remover a legenda de placeholder. -->
+          <figure class="about-visual">
+            <div class="about-visual-top"><span>NOSSO ESPAÇO</span><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#spark"></use></svg></div>
+            <img src="assets/ambiente/ambiente-placeholder.svg" width="600" height="430" alt="Ilustração provisória de uma hamburgueria; espaço reservado para foto do ambiente da Jost Burger" loading="lazy" decoding="async">
+            <div class="about-visual-copy" aria-hidden="true">BOM BURGER.<br>BOA COMPANHIA.</div>
+            <figcaption class="image-label"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#image"></use></svg> ESPAÇO PARA FOTO DO AMBIENTE</figcaption>
+          </figure>
+
+          <div class="about-copy">
+            <p class="eyebrow"><span class="section-number">02 /</span> NOSSA ESSÊNCIA</p>
+            <h2 id="about-title">FEITA PARA QUEM<br>AMA BURGER<span class="accent">.</span></h2>
+            <p>Tem coisa que não precisa de complicação: bons ingredientes, preparo cuidadoso e vontade de fazer bem-feito.</p>
+            <p>Essa é a proposta da Jost Burger. Um lugar em Brusque para reunir a turma, aproveitar o momento e descobrir como um bom hambúrguer pode transformar o seu dia.</p>
+            <ul class="values-list">
+              <li><span class="value-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#award"></use></svg></span><div><h3>Qualidade em primeiro lugar</h3><p>Cuidado em cada escolha, sabor em cada detalhe.</p></div></li>
+              <li><span class="value-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#home"></use></svg></span><div><h3>Ambiente acolhedor</h3><p>Seu lugar para uma pausa e uma boa conversa.</p></div></li>
+              <li><span class="value-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#heart"></use></svg></span><div><h3>Clientes que sempre voltam</h3><p>Uma experiência que dá vontade de repetir.</p></div></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-section section" id="localizacao" aria-labelledby="location-title">
+        <div class="container location-grid">
+          <div class="location-copy">
+            <p class="eyebrow"><span class="section-number">03 /</span> A CASA É SUA</p>
+            <h2 id="location-title">VENHA NOS<br>VISITAR<span class="accent">.</span></h2>
+            <p>Boa companhia, conversa sem pressa e um burger caprichado. Seu próximo encontro tem lugar.</p>
+            <div class="location-details">
+              <div class="detail-row">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#pin"></use></svg>
+                <div><h3>ENCONTRE A JOST</h3><address>Brusque, Santa Catarina<span>Endereço completo a confirmar.</span></address></div>
+              </div>
+              <!-- HORÁRIO ILUSTRATIVO: atualizar com os dias e horários reais de atendimento. -->
+              <div class="detail-row">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#clock"></use></svg>
+                <div><h3>HORÁRIO DA CASA</h3><p>Terça a domingo · 18h às 23h<span>Horário ilustrativo, a confirmar.</span></p></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MAPA: representação decorativa, sem localização exata.
+               Substituir por um iframe oficial com title e loading="lazy" após confirmar o endereço. -->
+          <div class="map-placeholder" aria-label="Área reservada para o mapa da Jost Burger em Brusque">
+            <img src="assets/ambiente/mapa-placeholder.svg" width="720" height="540" alt="" loading="lazy" decoding="async">
+            <span class="map-city">BRUSQUE / SC</span>
+            <div class="map-marker" aria-hidden="true"><svg class="icon"><use href="assets/icons/sprite.svg#pin"></use></svg><span>JOST BURGER</span></div>
+            <div class="map-caption"><div><strong>A gente se encontra aqui.</strong><span>Mapa e localização exata em breve.</span></div><a href="https://www.google.com/maps/search/?api=1&amp;query=Brusque%2C%20SC" target="_blank" rel="noopener noreferrer" aria-label="Ver a cidade de Brusque no Google Maps, nova aba"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg></a></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-section section" id="pedir" aria-labelledby="order-title">
+        <div class="container">
+          <div class="order-panel">
+            <div class="order-copy"><p class="eyebrow"><span class="small-line"></span> BATEU A FOME?</p><h2 id="order-title">SEU JOST BURGER.<br>A UM PEDIDO<br class="order-break"> DE DISTÂNCIA<span class="accent">.</span></h2></div>
+            <div class="order-action">
+              <span class="order-platform"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#bag"></use></svg> PEÇA PELO ANOTA AI</span>
+              <p>Escolha seu favorito no cardápio digital e deixe o resto com a gente.</p>
+              <a class="button button-primary order-link" href="https://anota.ai/" target="_blank" rel="noopener noreferrer">Pedir pelo Anota AI <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg></a>
+              <!-- Remover este aviso quando o link oficial da loja for configurado. -->
+              <small class="order-notice">Pedidos em breve. Nesta prévia, o botão abre o site do Anota AI.</small>
+              <!-- Botão secundário opcional: inserir aqui o link oficial da loja no iFood. -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contato">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="#inicio" aria-label="Jost Burger — voltar ao início"><img class="brand-symbol" src="assets/logo/simbolo.svg" alt="" width="46" height="46"><span class="brand-name">JOST<span>BURGER</span></span></a>
+            <p>Hambúrguer artesanal, sabor de verdade.<br>Feito com paixão, aqui em Brusque.</p>
+          </div>
+          <nav class="footer-links" aria-label="Links rápidos"><h2>EXPLORE</h2><a href="#inicio">Início</a><a href="#cardapio">Cardápio</a><a href="#sobre">Nossa essência</a><a href="#localizacao">Localização</a></nav>
+          <div class="footer-contact"><h2>VAMOS CONVERSAR</h2><p>Brusque · Santa Catarina</p><p class="footer-pending">Contato oficial em breve.</p><a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram; perfil oficial da Jost Burger a confirmar"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#instagram"></use></svg> Instagram <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg></a><small>Perfil oficial a confirmar.</small></div>
+        </div>
+        <div class="footer-bottom"><p>© 2026 Jost Burger. Todos os direitos reservados.</p><span>UM BOM BURGER MUDA O DIA.</span></div>
+      </div>
+    </footer>
+
+    <!-- Sem JS, o botão permanece disponível no celular. Com JS, aparece após o hero. -->
+    <div class="mobile-order" aria-label="Pedido rápido">
+      <a class="button button-primary order-link" href="https://anota.ai/" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#bag"></use></svg> Pedir agora <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg></a>
+    </div>
+  </body>
+</html>
