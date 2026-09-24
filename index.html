@@ -77,11 +77,6 @@
                 <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg>
               </a>
             </div>
-            <ul class="hero-benefits" aria-label="Nosso jeito de fazer">
-              <li><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#leaf"></use></svg>Ingredientes selecionados</li>
-              <li><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#flame"></use></svg>Sabor marcante</li>
-              <li><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#heart"></use></svg>Feito com paixão</li>
-            </ul>
           </div>
 
           <!-- FOTO PRINCIPAL: assets/burgers/jost principal.jpg -->
@@ -96,10 +91,22 @@
       </section>
 
       <div class="brand-strip" aria-hidden="true">
-        <div class="container brand-strip-inner">
-          <span>FEITO NA CHAPA.</span><svg class="icon"><use href="assets/icons/sprite.svg#spark"></use></svg>
-          <span>PENSADO NO DETALHE.</span><svg class="icon"><use href="assets/icons/sprite.svg#spark"></use></svg>
-          <span>SABOR DE VERDADE.</span>
+        <div class="brand-strip-track">
+          <div class="brand-strip-group">
+            <div class="container brand-strip-inner">
+              <span>FEITO NA CHAPA.</span><svg class="icon"><use href="assets/icons/sprite.svg#spark"></use></svg>
+              <span>PENSADO NO DETALHE.</span><svg class="icon"><use href="assets/icons/sprite.svg#spark"></use></svg>
+              <span>SABOR DE VERDADE.</span>
+            </div>
+          </div>
+          <!-- Cópia decorativa para manter o movimento contínuo, sem salto no loop. -->
+          <div class="brand-strip-group">
+            <div class="container brand-strip-inner">
+              <span>FEITO NA CHAPA.</span><svg class="icon"><use href="assets/icons/sprite.svg#spark"></use></svg>
+              <span>PENSADO NO DETALHE.</span><svg class="icon"><use href="assets/icons/sprite.svg#spark"></use></svg>
+              <span>SABOR DE VERDADE.</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -108,7 +115,7 @@
           <div class="section-heading">
             <div>
               <p class="eyebrow"><span class="section-number">01 /</span> ESPECIAIS DA CASA</p>
-              <h2 id="especiais-title">ESPECIAIS<br>DA JOST<span class="accent">.</span></h2>
+              <h2 id="especiais-title">ESPECIAIS<br>DO JOST<span class="accent">.</span></h2>
             </div>
             <div class="section-intro">
               <p>Alguns sabores que fazem parte da experiência Jost Burger.</p>
@@ -190,15 +197,19 @@
                 <div><h3>HORÁRIO DA CASA</h3><p>Segunda a sábado · 18h às 23:30h</p></div>
               </div>
             </div>
+            <a class="button button-secondary location-directions" href="https://www.google.com/maps/dir/-27.093722,-48.9109314/R.+Jo%C3%A3o+Bauer,+55+-+Centro+1,+Brusque+-+SC,+88350-101+@-27.093626,-48.911003/data=!4m10!4m9!1m1!4e1!1m5!1m4!1s0x94df47dcf8005761:0xe3d3be6b08bd517f!8m2!3d-27.0936488!4d-48.9109962!3e0?utm_source=mstt_0&amp;g_ep=CAESCTExLjc5LjMwMRgAIJFBKgBCAkJS" target="_blank" rel="noopener noreferrer">Como chegar <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg></a>
           </div>
 
-          <!-- MAPA: representação decorativa, sem localização exata.
-               Substituir por um iframe oficial com title e loading="lazy" após confirmar o endereço. -->
-          <div class="map-placeholder" aria-label="Área reservada para o mapa da Jost Burger em Brusque">
-            <img src="assets/ambiente/mapa-placeholder.svg" width="720" height="540" alt="" loading="lazy" decoding="async">
-            <span class="map-city">BRUSQUE / SC</span>
-            <div class="map-marker" aria-hidden="true"><svg class="icon"><use href="assets/icons/sprite.svg#pin"></use></svg><span>JOST BURGER</span></div>
-            <div class="map-caption"><div><strong>A gente se encontra aqui.</strong><span>Mapa e localização exata em breve.</span></div><a href="https://www.google.com/maps/search/?api=1&amp;query=Brusque%2C%20SC" target="_blank" rel="noopener noreferrer" aria-label="Ver a cidade de Brusque no Google Maps, nova aba"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg></a></div>
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps?q=-27.0936488,-48.9109962&amp;output=embed"
+              width="100%"
+              height="434"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização da Jost Burger"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -229,7 +240,14 @@
           </div>
           <!-- Cardápio: mesmo PDF do menu superior, ainda pendente em assets/cardapio/cardapio-jost.pdf. -->
           <nav class="footer-links" aria-label="Links rápidos"><h2>EXPLORE</h2><a href="#inicio">Início</a><a href="assets/cardapio/cardapio-jost.pdf" target="_blank" rel="noopener noreferrer">Cardápio</a><a href="#sobre">Nossa essência</a><a href="#localizacao">Localização</a></nav>
-          <div class="footer-contact"><h2>VAMOS CONVERSAR</h2><p>Brusque · Santa Catarina</p><a class="social-link" href="https://www.instagram.com/jost.burger/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram; perfil oficial da Jost Burger a confirmar"><img class="instagram-icon" src="assets/icons/icon%20instagram.webp" width="20" height="20" alt="" loading="lazy" decoding="async"> Instagram <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg></a></div>
+          <div class="footer-contact">
+            <h2>VAMOS CONVERSAR</h2>
+            <p>Brusque · Santa Catarina</p>
+            <div class="social-links">
+              <a class="social-link" href="https://www.instagram.com/jost.burger/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram da Jost Burger, nova aba"><img class="social-icon" src="assets/icons/icon%20instagram.webp" width="20" height="20" alt="" loading="lazy" decoding="async"> Instagram <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg></a>
+              <a class="social-link" href="https://api.whatsapp.com/send/?phone=554791735252&amp;text&amp;type=phone_number&amp;app_absent=0&amp;utm_source=ig" target="_blank" rel="noopener noreferrer" aria-label="Fazer contato com a Jost Burger pelo WhatsApp, nova aba"><span class="social-icon whatsapp-icon" aria-hidden="true"><img src="assets/icons/icon%20wpp.png" width="20" height="20" alt="" loading="lazy" decoding="async"></span> WhatsApp <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-up-right"></use></svg></a>
+            </div>
+          </div>
         </div>
         <div class="footer-bottom"><p>© 2026 Jost Burger. Todos os direitos reservados.</p><span>UM BOM BURGER MUDA O DIA.</span></div>
       </div>
