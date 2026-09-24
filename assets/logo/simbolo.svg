@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <!-- Símbolo provisório. Substituir pela logo oficial da Jost Burger. -->
-  <rect x="1" y="1" width="62" height="62" rx="16" fill="#203829" stroke="#294936"/>
-  <g stroke="#F5F5F2" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M15 29c0-10 7-16 17-16s17 6 17 16H15Z"/>
-    <path d="m15 35 6 3 7-3 8 3 7-3 6 3M15 44h34c0 5-4 8-9 8H24c-5 0-9-3-9-8Z"/>
-    <path d="m26 23 1-1m10 1 1 1m-6-6 1-1"/>
-  </g>
-</svg>
