@@ -112,7 +112,11 @@ h2 { margin-top: 20px; font-size: clamp(44px, 4.7vw, 64px); line-height: .99; }
 .brand-strip-group { flex: 0 0 50%; min-width: 0; }
 .brand-strip-inner { display: flex; align-items: center; justify-content: space-around; gap: 20px; }
 .brand-strip span { color: var(--text); font-family: var(--font-display); font-size: 22px; font-weight: 600; letter-spacing: 1.1px; white-space: nowrap; }
-.brand-strip .icon { width: 19px; height: 19px; color: var(--accent-detail); }
+.brand-strip .strip-burger { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 24px; height: 24px; color: var(--text); animation: burger-spin 5s linear infinite; }
+@keyframes burger-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
 @keyframes brand-strip-scroll {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
@@ -146,10 +150,10 @@ h2 { margin-top: 20px; font-size: clamp(44px, 4.7vw, 64px); line-height: .99; }
 .about-section { padding: 86px 0; background: var(--bg-secondary); border-block: 1px solid var(--border); }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 86px; align-items: center; }
 .about-visual { display: flex; position: relative; min-height: 540px; flex-direction: column; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--surface); }
-.about-visual-top { display: flex; align-items: center; justify-content: space-between; padding: 25px 28px 0; color: var(--text-muted); font-size: 8px; letter-spacing: 2px; }
+.about-visual-top { display: flex; align-items: center; justify-content: space-between; padding: 25px 28px; color: var(--text-muted); font-size: 8px; letter-spacing: 2px; }
 .about-visual-top .icon { width: 19px; height: 19px; }
-.about-visual > img { width: 100%; margin-top: -4px; opacity: .66; }
-.about-visual-copy { position: relative; padding: 0 32px 68px; margin-top: -27px; color: var(--text); font-family: var(--font-display); font-size: clamp(40px, 3.7vw, 52px); font-weight: 700; line-height: 1; }
+.about-visual > img { display: block; width: 100%; height: auto; }
+.about-visual-copy { position: relative; padding: 25px 32px 30px; color: var(--text); font-family: var(--font-display); font-size: clamp(40px, 3.7vw, 52px); font-weight: 700; line-height: 1; }
 .about-visual .image-label { bottom: 25px; left: 32px; }
 .about-copy h2 { margin-bottom: 26px; }
 .about-copy > p:not(.eyebrow) { margin-top: 15px; color: var(--muted); font-size: 14px; line-height: 1.85; }
@@ -237,7 +241,6 @@ h2 { margin-top: 20px; font-size: clamp(44px, 4.7vw, 64px); line-height: .99; }
   .hero-actions .button { gap: 17px; padding-inline: 20px; }
   .about-grid { gap: 48px; }
   .about-visual { min-height: 510px; justify-content: space-between; }
-  .about-visual > img { margin-top: 18px; }
   .about-visual-copy { padding-inline: 25px; }
   .location-grid { gap: 50px; }
   .product-grid { gap: 18px; }
@@ -272,7 +275,7 @@ h2 { margin-top: 20px; font-size: clamp(44px, 4.7vw, 64px); line-height: .99; }
   .hero-visual { min-height: 492px; }
   .hero-bottom > span:last-child { display: none; }
   .brand-strip span { font-size: 18px; letter-spacing: .5px; }
-  .brand-strip .icon { width: 15px; height: 15px; }
+  .brand-strip .strip-burger { width: 20px; height: 20px; font-size: 18px; }
   .menu-section { padding: 76px 0; }
   .section-heading { gap: 30px; }
   .section-intro { max-width: 250px; }
@@ -340,7 +343,7 @@ h2 { margin-top: 20px; font-size: clamp(44px, 4.7vw, 64px); line-height: .99; }
   .brand-strip { padding-block: 17px; }
   .brand-strip-inner { justify-content: space-between; gap: 8px; }
   .brand-strip span { font-size: clamp(11px, 3.2vw, 17px); letter-spacing: .25px; }
-  .brand-strip .icon { width: 11px; height: 11px; }
+  .brand-strip .strip-burger { width: 16px; height: 16px; font-size: 14px; }
   .menu-section { padding: 65px 0; }
   .eyebrow { font-size: 8px; letter-spacing: 1.5px; gap: 10px; }
   h2 { font-size: clamp(43px, 11.8vw, 59px); margin-top: 17px; }
@@ -365,9 +368,8 @@ h2 { margin-top: 20px; font-size: clamp(44px, 4.7vw, 64px); line-height: .99; }
   .value-icon { width: 43px; height: 43px; }
   .values-list li { gap: 15px; }
   .about-visual { min-height: 0; }
-  .about-visual > img { margin-top: -9px; }
-  .about-visual-top { padding: 24px 25px 0; }
-  .about-visual-copy { margin-top: -20px; padding: 0 25px 67px; font-size: 45px; }
+  .about-visual-top { padding: 24px 25px; }
+  .about-visual-copy { padding: 24px 25px; font-size: 45px; }
   .about-visual .image-label { bottom: 25px; left: 25px; }
   .location-section { padding: 65px 0 50px; }
   .location-grid { grid-template-columns: 1fr; gap: 33px; }
