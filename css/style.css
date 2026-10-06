@@ -324,12 +324,12 @@ h2 { margin-top: 20px; font-size: clamp(44px, 4.7vw, 64px); line-height: .99; }
   .brand-logo { width: 52px; height: 52px; }
   .menu-toggle { width: 44px; height: 44px; }
   .js .site-nav { padding-inline: 20px; }
-  .hero { padding-top: 38px; }
-  .hero-grid { grid-template-columns: 1fr; gap: 32px; }
-  .hero-copy { padding-block: 0; }
+  .hero { padding-top: 38px; overflow: hidden; isolation: isolate; }
+  .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .hero-copy { position: relative; z-index: 1; padding-block: 0; }
   .hero .eyebrow { max-width: none; font-size: 8px; letter-spacing: 1.1px; gap: 10px; }
   .hero .small-line { width: 22px; }
-  .hero h1 { font-size: clamp(108px, 26.5vw, 154px); margin-top: 27px; margin-bottom: 23px; }
+  .hero h1 { font-size: clamp(88px, 22vw, 128px); margin-top: 27px; margin-bottom: 23px; }
   .hero-subtitle { font-size: 24px; line-height: 1.35; }
   .hero-description { margin-top: 16px; max-width: 390px; font-size: 14px; line-height: 1.8; }
   .hero-actions { gap: 11px; margin-top: 25px; }
@@ -337,7 +337,9 @@ h2 { margin-top: 20px; font-size: clamp(44px, 4.7vw, 64px); line-height: .99; }
   .hero-benefits { gap: 12px 18px; margin-top: 23px; }
   .hero-benefits li { font-size: 9px; }
   .hero-benefits .icon { width: 14px; height: 14px; }
-  .hero-visual { min-height: 0; aspect-ratio: 1.1; border-radius: 12px; }
+  .hero-visual { position: absolute; z-index: -1; inset: 0; width: 100%; min-height: 0; border-radius: 0; background: none; pointer-events: none; }
+  .hero-burger { position: absolute; height: 100%; object-fit: contain; object-position: center top; transform: none; }
+  .hero-visual::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11, 15, 16, .55), rgba(11, 15, 16, .12)), linear-gradient(180deg, var(--bg), rgba(11, 15, 16, .2) 12%, rgba(11, 15, 16, .1) 32%, rgba(11, 15, 16, .8) 66%, var(--bg) 94%); }
   .hero-bottom { margin-top: 26px; padding-bottom: 25px; font-size: 6px; letter-spacing: 1.1px; }
   .hero-bottom .icon { width: 13px; height: 13px; }
   .brand-strip { padding-block: 17px; }
@@ -411,12 +413,11 @@ h2 { margin-top: 20px; font-size: clamp(44px, 4.7vw, 64px); line-height: .99; }
   .header-actions .button { font-size: 10px; padding-inline: 11px; gap: 8px; }
   .header-actions .button .icon { display: none; }
   .hero .eyebrow { font-size: 7px; letter-spacing: .75px; }
-  .hero h1 { font-size: clamp(90px, 27.5vw, 100px); }
+  .hero h1 { font-size: clamp(74px, 22.5vw, 82px); }
   .hero-subtitle { font-size: 23px; }
   .hero-actions .button { padding-inline: 18px; gap: 16px; font-size: 11px; }
   .hero-benefits { gap: 10px 14px; }
   .hero-benefits li { font-size: 8px; }
-  .hero-visual { aspect-ratio: 1; }
   .hero-bottom { font-size: 5px; }
   .order-panel { padding-inline: 21px; }
   .order-panel h2 { font-size: 34px; }
