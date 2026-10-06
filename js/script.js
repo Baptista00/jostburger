@@ -1,6 +1,3 @@
-/* Jost Burger — melhoria progressiva, sem bibliotecas.
-   Os links, o conteúdo e o cardápio funcionam mesmo sem JavaScript.
-   A rolagem suave está no CSS e respeita prefers-reduced-motion. */
 (() => {
   "use strict";
 
